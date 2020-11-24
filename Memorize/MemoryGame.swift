@@ -30,7 +30,7 @@ struct MemoryGame<CardContent> {
         
         for pairIndex in 0..<numberOfPairsOfCards {
             let content = cardContentFactory(pairIndex)
-            cards.append(Card(content: content, id: pairIndex))
+            cards.append(Card(content: content, id: pairIndex*2))
             cards.append(Card(content: content, id: pairIndex*2+1))
         }
     }
